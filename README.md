@@ -6,8 +6,15 @@ This dataset is an extended version of the previously introduced [BioTacSp Image
 The aforementioned [BioTacSp Images](#) contains grasp samples performed over 41 objects with different geometries (i.e. cylinders, spheres, boxes), materials (i.e. wood, plastic, aluminum), stiffness levels (i.e. solid, soft) as well as sizes and weights. This extended version adds a test set of 10 new objects with similar materials but different geometries and stiffness levels. The original 41 were left for the training and validation purposes. Here we show a group photo of both sets.
 
 <p align="center">
-  <img src="http://www.fillmurray.com/460/300">
+  Train Objects
+  <img src="https://github.com/3dperceptionlab/biotacsp-stability-set-v2/blob/master/img/trainobjects2.jpg">
 </p>
+
+<p align="center">
+  Test Objects
+  <img src="https://github.com/3dperceptionlab/biotacsp-stability-set-v2/blob/master/img/testobjects.jpg">
+</p>
+
 
 Both sets, training and test, were recorded following these steps:
 
@@ -17,6 +24,11 @@ Both sets, training and test, were recorded following these steps:
 4) Label the trial: the previously recorded tactile readings were labeled according to the outcome of the lifting with two classes (stable, i.e., it is completely static, or slip, i.e., either fell from the hand or it moves within it).
 
 We have performed grasps using a Shadow Dexterous hand equipped with three BioTac SP tactile sensors in its index finger (ff), middle finger (mf) and thumb (th). The dataset stores 24 values for each of the tactile sensors, the grasped object and whether the object slipped or not from the hand. There are two hand configurations in the original dataset: palm down grasps were performed pointing the palm of the hand downwards while palm side grasps were recorded pointing it to one side, with the thumb upwards. In this work, we have added a new configuration: palm 45 which is in between the other two configurations at an angle of 45 degrees. Pictures below show examples for each orientation.
+
+| Palm Down | Palm 45 | Palm Side | 
+|:-:|:-:|:-:|
+|![](img/palmdown.jpg) | ![](img/palm45.jpg) | ![](img/palmside.jpg) |
+|![](img/palmdown_grasp.jpg) | ![](img/palm45_grasp.jpg) | ![](img/palmside_grasp.jpg) |
 
 The dataset is split into six files, three for the training set and three for the test set with one individual file for each orientation. Here is the list of the provided CSV files.
 
