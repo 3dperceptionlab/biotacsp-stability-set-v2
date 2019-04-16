@@ -2,8 +2,7 @@
 
 This dataset is an extended version of the previously introduced [BioTacSp Images](https://github.com/yayaneath/biotac-sp-images) by Zapata-Impata et. al.
 
-
-The aforementioned [BioTacSp Images](#) contains grasp samples performed over 41 objects with different geometries (i.e. cylinders, spheres, boxes), materials (i.e. wood, plastic, aluminum), stiffness levels (i.e. solid, soft) as well as sizes and weights. This extended version adds a test set of 10 new objects with similar materials but different geometries and stiffness levels. The original 41 were left for the training and validation purposes. Here we show a group photo of both sets.
+The aforementioned [BioTacSp Images](https://github.com/yayaneath/biotac-sp-images) contains grasp samples performed over 41 objects with different geometries (i.e. cylinders, spheres, boxes), materials (i.e. wood, plastic, aluminum), stiffness levels (i.e. solid, soft) as well as sizes and weights. This extended version adds a test set of 10 new objects with similar materials but different geometries and stiffness levels. The original 41 were left for the training and validation purposes. Here we show a group photo of both sets.
 
 <p align="center">
   Train Objects
@@ -14,7 +13,6 @@ The aforementioned [BioTacSp Images](#) contains grasp samples performed over 41
   Test Objects
   <img src="https://github.com/3dperceptionlab/biotacsp-stability-set-v2/blob/master/img/testobjects.jpg">
 </p>
-
 
 Both sets, training and test, were recorded following these steps:
 
@@ -54,19 +52,15 @@ See the next table for a summary of the whole dataset and its splits:
 If you use this dataset, please cite:
 
 ```
-@article{BTS3V2_2018,
+@inproceedings{Garcia-Garcia2019,
   author    = {Alberto Garcia{-}Garcia and
                Brayan S. Zapata{-}Impata and
                Sergio Orts{-}Escolano and
-               Jose Garcia Rodriguez and
-               Pablo Gil},
-  title     = {TactileGCN},
-  journal   = {CoRR},
-  volume    = {XXXX},
-  year      = {2018},
-  url       = {http://arxiv.org/abs/XXXXXX},
-  archivePrefix = {arXiv},
-  eprint    = {1810.06936},
+               Pablo Gil and
+               Jose Garcia{-}Rodriguez},
+  title     = {TactileGCN: A Graph Convolutional Network for Predicting Grasp Stability with Tactile Sensors},
+  booktitle = {Proceedings of the International Joint Conference on Neural Networks (IJCNN)}
+  year      = {2019},
 }
 
 ```
